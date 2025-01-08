@@ -7,14 +7,26 @@
 ---
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    
+    <meta charset="utf-8" dir="rtl" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
+    <input type="text" name="textbox" style="direction:RTL;" onkeyup="rtl(this);"/>
     <title>Astro</title>
   </head>
+  <div dir="rtl">
   <body>
-    <h1>Astro</h1>
-	<h1>My astro websute أهلا بكم</h1>
-  </body>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/blog">Blog</a>
+    <h4>Astro</h4>
+	<h1 >My astro website أهلا بكم </h1>
+ 
+  <p >
+    إن هذا الموقع يوفر لزواره الكرام كل جديد في مجال التقنية
+  </p>
+  <p>RTL_TEXT <span dir="rtl">ltr_text</span>, <span dir="rtl">ltr_text</span></p>
+  <p>the title is <cite dir="rtl">AN INTRODUCTION TO <span dir="ltr">c++</span></cite> in arabic.</p>
+  </body> </div>
 </html>
